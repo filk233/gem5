@@ -43,7 +43,13 @@ import m5
 
 # import all of the SimObjects
 from m5.objects import *
-
+# import sys
+# from sys import meta_path
+# f = open('__init__.py', 'w')
+# for key,val in sys.meta_path[0].modules.items():
+#     if key.startswith('m5.objects'):
+#         #f.write("ln -s ../../../../../src/" + val[0][0:] + " ./\n")
+#         f.write("from " + key.split('.')[-1] + " import *\n")
 # create the system we are going to simulate
 system = System()
 
